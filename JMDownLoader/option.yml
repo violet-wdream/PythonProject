@@ -40,6 +40,7 @@ plugins:
       # 把章节的所有图片合并为一个pdf的插件
     - plugin: img2pdf
       kwargs:
+        delete_original_file: true  # 必须设为true才会删除原文件
         pdf_dir: C:\Users\86182\Desktop\Dev\PythonProject\JMDownLoader\assets # pdf存放文件夹
         filename_rule: Aname # pdf命名规则，A代表album, name代表使用album.name也就是本子名称
 
