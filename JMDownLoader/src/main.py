@@ -125,7 +125,7 @@ def main():
     parser.add_argument('--no_push', action='store_true', help='下载后不推送到GitHub')
     args = parser.parse_args()
 
-    option = jmcomic.create_option_by_file('option.yml')
+    option = jmcomic.create_option_by_file('../option.yml')
 
     # 下载前先检测专辑所有文件的总大小
     total_size = get_total_size(args.album_id, option)
